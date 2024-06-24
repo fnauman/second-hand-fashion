@@ -1,0 +1,13 @@
+---
+title: "AI for second-hand fashion"
+author: "Farrukh Nauman"
+image: assets/damaged_tshirt.jpg
+---
+
+The fashion industry contributes up to 10% of global green house gas emissions. The current operation of most of second-hand industry is entirely manual. This page represents projects with the ambition of automating the sorting process in the second-hand fashion industry. 
+
+We released a dataset containing 31,997 items here:
+
+[circular_fashion_v2](https://zenodo.org/records/8386668)
+
+This page will be updated with tutorials with the dataset, tasks like damage detection and model comparison. Stay tuned! (Last updated: `2024-06-24`).
