@@ -8,6 +8,6 @@ The fashion industry contributes up to 10% of global green house gas emissions. 
 
 We released a dataset containing 31,997 items here:
 
-[circular_fashion_v2](https://zenodo.org/records/8386668)
+[circular_fashion_v2](https://zenodo.org/records/12518734)
 
 This page will be updated with tutorials with the dataset, tasks like damage detection and model comparison. Stay tuned! (Last updated: `2024-06-24`).
