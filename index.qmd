@@ -1,13 +1,76 @@
 ---
 title: "AI for second-hand fashion"
-author: "Farrukh Nauman"
-image: assets/damaged_tshirt.jpg
+author: "Farrukh Nauman, Email: farrukh.nauman@ri.se"
+# image: assets/damaged_tshirt.jpg
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1200px
+      margin-width: 250px
 ---
 
-The fashion industry contributes up to 10% of global green house gas emissions. The current operation of most of second-hand industry is entirely manual. This page represents projects with the ambition of automating the sorting process in the second-hand fashion industry. 
+<!-- :::{.column-screen}
+![](assets/damaged_tshirt.jpg)
+::: -->
 
-We released a dataset containing 31,997 items here:
+The fashion industry contributes up to 10% of global green house gas emissions. The current operation of most of second-hand industry is entirely manual. This page represents projects with the ambition of automating the sorting process in the second-hand fashion industry.
 
-[circular_fashion_v2](https://zenodo.org/records/12518734)
+:::{.grid}
+:::{.g-col-6}
+<!-- ![Damage Detection](assets/damaged_tshirt.jpg =400x400) -->
+<img src="assets/damaged_tshirt.jpg" alt="damaged t-shirt" height="400" width="600"/>
+:::
+<!-- :::{.g-col-4}
+![Classification](assets/classification.jpg)
+::: -->
+:::{.g-col-6}
+<!-- ![Sorting Process](assets/sorting_gemini.jpeg =400x400) -->
+<img src="assets/sorting_gemini.jpeg" alt="sorting" height="400" width="600"/>
+:::
+:::
 
-This page will be updated with tutorials with the dataset, tasks like damage detection and model comparison. Stay tuned! (Last updated: `2024-06-24`).
+## Dataset 
+We released a dataset containing 31,638 items here:
+
+[circular_fashion_v3](https://zenodo.org/records/12518734)
+
+<!-- ## Project Overview
+<div class="ratio ratio-16x9">
+<iframe src="assets/presentation.html" allowfullscreen></iframe>
+</div> -->
+
+::: {.callout-note}
+This page will be updated with tutorials with the dataset, tasks like damage detection and model comparison. Stay tuned! (Last updated: `2024-11-24`).
+:::
+
+## Recent Updates
+:::{.card}
+# Dataset Statistics
+<div id="dataset-stats">Loading dataset statistics...</div>
+:::
+
+<script>
+  async function fetchDatasetStats() {
+    try {
+      const response = await fetch('https://zenodo.org/api/records/12518734');
+      const data = await response.json();
+      const stats = `
+        <p>Title: ${data.metadata.title}</p>
+        <p>Creators: ${data.metadata.creators.map(creator => creator.name).join(', ')}</p>
+        <!-- <p>Publication Date: ${data.metadata.publication_date}</p> -->
+        <p>Downloads: ${data.stats.downloads}</p>
+        <p>Views: ${data.stats.views}</p>
+      `;
+      document.getElementById('dataset-stats').innerHTML = stats;
+    } catch (error) {
+      document.getElementById('dataset-stats').innerHTML = 'Failed to load dataset statistics.';
+    }
+  }
+
+  // Fetch dataset stats immediately
+  fetchDatasetStats();
+
+  // Schedule updates every 10 minutes (600000 milliseconds)
+  setInterval(fetchDatasetStats, 600000);
+</script>
