@@ -1,7 +1,7 @@
 ---
 title: "AI for second-hand fashion"
-author: "Farrukh Nauman"
-image: assets/damaged_tshirt.jpg
+author: "Farrukh Nauman, Email: farrukh.nauman@ri.se"
+# image: assets/damaged_tshirt.jpg
 format:
   html:
     grid:
@@ -10,21 +10,23 @@ format:
       margin-width: 250px
 ---
 
-:::{.column-screen}
+<!-- :::{.column-screen}
 ![](assets/damaged_tshirt.jpg)
-:::
+::: -->
 
 The fashion industry contributes up to 10% of global green house gas emissions. The current operation of most of second-hand industry is entirely manual. This page represents projects with the ambition of automating the sorting process in the second-hand fashion industry.
 
 :::{.grid}
 :::{.g-col-6}
-![Damage Detection](assets/damaged_tshirt.jpg)
+<!-- ![Damage Detection](assets/damaged_tshirt.jpg =400x400) -->
+<img src="assets/damaged_tshirt.jpg" alt="damaged t-shirt" height="400" width="600"/>
 :::
 <!-- :::{.g-col-4}
 ![Classification](assets/classification.jpg)
 ::: -->
 :::{.g-col-6}
-![Sorting Process](assets/sorting_gemini.jpeg)
+<!-- ![Sorting Process](assets/sorting_gemini.jpeg =400x400) -->
+<img src="assets/sorting_gemini.jpeg" alt="sorting" height="400" width="600"/>
 :::
 :::
 
