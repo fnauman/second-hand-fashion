@@ -11,7 +11,21 @@
     "href": "index.html",
     "title": "AI for second-hand fashion",
     "section": "",
-    "text": "The fashion industry contributes up to 10% of global green house gas emissions. The current operation of most of second-hand industry is entirely manual. This page represents projects with the ambition of automating the sorting process in the second-hand fashion industry.\nWe released a dataset containing 31,997 items here:\ncircular_fashion_v2\nThis page will be updated with tutorials with the dataset, tasks like damage detection and model comparison. Stay tuned! (Last updated: 2024-06-24)."
+    "text": "The fashion industry contributes up to 10% of global green house gas emissions. The current operation of most of second-hand industry is entirely manual. This page represents projects with the ambition of automating the sorting process in the second-hand fashion industry."
+  },
+  {
+    "objectID": "index.html#dataset",
+    "href": "index.html#dataset",
+    "title": "AI for second-hand fashion",
+    "section": "Dataset",
+    "text": "Dataset\nWe released a dataset containing 31,638 items here:\ncircular_fashion_v3\n\n\n\n\n\n\n\nNote\n\n\n\nThis page will be updated with tutorials with the dataset, tasks like damage detection and model comparison. Stay tuned! (Last updated: 2024-11-24)."
+  },
+  {
+    "objectID": "index.html#recent-updates",
+    "href": "index.html#recent-updates",
+    "title": "AI for second-hand fashion",
+    "section": "Recent Updates",
+    "text": "Recent Updates"
   },
   {
     "objectID": "posts.html",
