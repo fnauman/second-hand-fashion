@@ -1,0 +1,51 @@
+---
+title: "Future directions"
+description: "Looking ahead at what's next"
+author: "Farrukh Nauman"
+date: "2025-01-30"
+categories: [news, updates]
+---
+
+# Lessons learned and what's next
+
+This project has been a success: we managed to create a one-of-a-kind dataset of second-hand fashion items that should have lasting value. Below, I list some challenges we encountered and some future directions for projects in this domain. 
+
+## Challenges
+
+**Data quality issues**: 
+
+1. Only image level annotations are included in the dataset, which means that bounding boxes or segmentation masks necessary for damage detection are not included. 
+2. Annotation quality was poor and inconsistent, requiring excessive effort to clean and reject bad annotations. 
+3. Higher resolution and better lighting conditions would have made the task easier. 
+4. The industry has not settled on a standard for annotating various attributes of fashion items, which makes it challenging to use and finetune pretrained models on the dataset. 
+
+**Organizational challenges**:
+
+1. All partners need a baseline level of technical expertise/support. Occasionally, the laptop or the camera setup did not work as expected and the organizations we were working with were not able to resolve these issues themselves. 
+2. Financing problems: The second-hand fashion industry is highly fragmented and under funded, which means that it is difficult for organizations both at an individual level and at a community level to develop and scale up projects.
+3. The managers and representatives from organizations did not understand the challenges of AI and automation, making it difficult to implement the projects effectively. 
+
+## Future directions
+
+A few general recommendations:
+
+1. Focus on specialized tasks: Identify niche areas where AI can add the most value, such as damage detection or quality assessment.
+2. Adaptability: The field of AI is moving at an unprecedented speed and with the cycles of 6-12 months from going from idea to consortium building to proposal submission to launch, it is essential to be able to adapt to the latest developments. 
+3. Transfer of tech: Do not solve an already solved problem; hire technical experts to learn existing tech.
+4. Higher quality data: Prioritize the collection of high-resolution images and robust annotations.
+
+**Example future project: Localized Trends** 
+
+1. Emphasize the difficulty in matching supply with local preferences, as trends can vary significantly.​ 
+2. Collect data from first-hand retailers, ensuring representativeness and timeliness.
+3. Build a dataset of local trends, including information on the number of items sold, the prices, and the availability of the items.
+4. End to end digitalization: For AI models that can adapt to changing trends and preferences dynamically, everything needs to be digital.​
+
+**Example future project: Recycling/Material detection**
+
+The grand challenge in recycling is to identify the materials of garments to a high degree of accuracy, which is particularly difficult for multi-layered garments and garments with certain colors. 
+
+1. Raw sensor data: For AI to accurately identify materials to streamline recycling processes, we need raw data.​ 
+2. Differentiating recycling from reuse: Hard problem – need demand modeling in recycling and retail sectors to decide whether to recycle or reuse. 
+3. Lifecycle Tracking: Develop systems to track garments throughout their lifecycle, optimizing decisions on whether to recycle, repair, or resell.​ 
+4. Innovative Recycling Methods: Encourage research into new recycling technologies that can handle a wider range of materials, enabled by better material detection.​
