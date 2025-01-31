@@ -8,7 +8,7 @@
 
 <meta name="author" content="Farrukh Nauman">
 <meta name="dcterms.date" content="2025-01-30">
-<meta name="description" content="Looking ahead at what’s next">
+<meta name="description" content="Insights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and local trend analysis.">
 
 <title>Future directions – Second-hand Fashion AI</title>
 <style>
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-29e2c20b02301cfff04dc8050bf30c7e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-cee08ee271fa076767f9bd386c7b58d6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9d50ee50d00a8eb6fed9e7c815c5bb39.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -110,34 +110,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#lessons-learned-and-whats-next" id="toc-lessons-learned-and-whats-next" class="nav-link active" data-scroll-target="#lessons-learned-and-whats-next">Lessons learned and what’s next</a>
-  <ul class="collapse">
-  <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges">Challenges</a></li>
-  <li><a href="#future-directions" id="toc-future-directions" class="nav-link" data-scroll-target="#future-directions">Future directions</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Future directions</h1>
+<p class="subtitle lead">Lessons Learned and Next Steps in AI-Driven Second-Hand Fashion</p>
   <div class="quarto-categories">
     <div class="quarto-category">news</div>
     <div class="quarto-category">updates</div>
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">fashion-tech</div>
+    <div class="quarto-category">sustainability</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Looking ahead at what’s next
+    Insights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and local trend analysis.
   </div>
 </div>
 
@@ -173,41 +165,41 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="challenges">Challenges</h2>
 <p><strong>Data quality issues</strong>:</p>
 <ol type="1">
-<li>Only image level annotations are included in the dataset, which means that bounding boxes or segmentation masks necessary for damage detection are not included.</li>
-<li>Annotation quality was poor and inconsistent, requiring excessive effort to clean and reject bad annotations.</li>
-<li>Higher resolution and better lighting conditions would have made the task easier.</li>
-<li>The industry has not settled on a standard for annotating various attributes of fashion items, which makes it challenging to use and finetune pretrained models on the dataset.</li>
+<li>The dataset currently only includes image-level annotations, lacking bounding boxes or segmentation masks. This limits its applicability for tasks like detailed damage detection, which requires precisely locating damaged areas within the garment image.</li>
+<li>We encountered issues with annotation quality and consistency. A significant portion of annotations were inaccurate or inconsistent, leading to substantial manual effort in cleaning and rejecting unusable data. This increased the project’s workload and timeline.</li>
+<li>Data collection was sometimes hampered by suboptimal image quality. Lower resolution images and inconsistent lighting conditions made annotation more challenging and potentially impacted the accuracy of AI models. Future data collection should prioritize high-resolution images under controlled lighting.</li>
+<li>The lack of standardized annotation guidelines in the second-hand fashion industry posed a challenge. This absence of a common vocabulary for describing garment attributes makes it difficult to leverage pre-trained AI models and compare datasets. Developing industry-wide annotation standards would benefit research and development.</li>
 </ol>
 <p><strong>Organizational challenges</strong>:</p>
 <ol type="1">
-<li>All partners need a baseline level of technical expertise/support. Occasionally, the laptop or the camera setup did not work as expected and the organizations we were working with were not able to resolve these issues themselves.</li>
-<li>Financing problems: The second-hand fashion industry is highly fragmented and under funded, which means that it is difficult for organizations both at an individual level and at a community level to develop and scale up projects.</li>
-<li>The managers and representatives from organizations did not understand the challenges of AI and automation, making it difficult to implement the projects effectively.</li>
+<li>Ensuring a baseline level of technical capacity across partner organizations is crucial. We experienced technical issues with equipment (e.g., camera setups, laptops) where some partner organizations lacked the expertise to resolve them independently. For future projects, upfront technical training and support for all partners is recommended.</li>
+<li>The fragmented and underfunded nature of the second-hand fashion industry presents financing challenges. This makes it difficult for organizations and initiatives to secure resources for developing and scaling innovative AI projects. Dedicated funding and investment in this sector are essential.</li>
+<li>A gap in understanding AI and automation among some managers and representatives hindered project implementation. This lack of familiarity sometimes led to unrealistic expectations or difficulties integrating AI workflows. Investing in education and communication to bridge this knowledge gap is vital for successful AI adoption.</li>
 </ol>
 </section>
 <section id="future-directions" class="level2">
 <h2 class="anchored" data-anchor-id="future-directions">Future directions</h2>
 <p>A few general recommendations:</p>
 <ol type="1">
-<li>Focus on specialized tasks: Identify niche areas where AI can add the most value, such as damage detection or quality assessment.</li>
-<li>Adaptability: The field of AI is moving at an unprecedented speed and with the cycles of 6-12 months from going from idea to consortium building to proposal submission to launch, it is essential to be able to adapt to the latest developments.</li>
-<li>Transfer of tech: Do not solve an already solved problem; hire technical experts to learn existing tech.</li>
-<li>Higher quality data: Prioritize the collection of high-resolution images and robust annotations.</li>
+<li><strong>Prioritize specialized AI applications:</strong> Focus on identifying and developing AI tools for specific, high-impact niche areas within the second-hand fashion sector, such as damage detection, automated quality assessment, or personalized recommendation systems.</li>
+<li><strong>Embrace Adaptability:</strong> The AI landscape is constantly changing. Given the typical 6-12 month cycles for securing funding and launching research projects (especially for large EU and national grants), it’s crucial to build adaptability into project design and be prepared to adjust plans as needed.</li>
+<li><strong>Leverage Existing Technology and Expertise:</strong> Avoid reinventing the wheel. Prioritize the transfer and adaptation of existing AI technologies and methodologies. Actively seek technical expertise through hiring specialists, collaboration, or open-source resources.</li>
+<li><strong>Invest in High-Quality Data:</strong> Building upon our challenges, future projects must prioritize high-resolution images under controlled conditions and robust, consistent annotations. This upfront investment in data quality will improve model performance and reduce data cleaning efforts.</li>
 </ol>
-<p><strong>Example future project: Localized Trends</strong></p>
+<p><strong>Example: Localized Trends</strong></p>
 <ol type="1">
-<li>Emphasize the difficulty in matching supply with local preferences, as trends can vary significantly.​</li>
-<li>Collect data from first-hand retailers, ensuring representativeness and timeliness.</li>
-<li>Build a dataset of local trends, including information on the number of items sold, the prices, and the availability of the items.</li>
-<li>End to end digitalization: For AI models that can adapt to changing trends and preferences dynamically, everything needs to be digital.​</li>
+<li><strong>Address Localized Fashion Trends:</strong> Highlight regional variations in fashion preferences. Effectively matching supply with local demand is a major challenge, leading to mismatches and missed opportunities.</li>
+<li><strong>Source Data from First-Hand Retailers:</strong> To capture current trends, consider data from first-hand retailers. This provides more timely and representative information on consumer preferences than second-hand market data, which may reflect older trends.</li>
+<li><strong>Develop a Comprehensive Dataset:</strong> This dataset should include features capturing nuances of local trends, such as demographics, local events, weather patterns, and social media trends related to fashion in specific regions.</li>
+<li><strong>Embrace End-to-End Digitalization:</strong> To enable AI models to adapt to changing trends, a fully digital ecosystem is essential. This includes digitalizing inventory management, sales data, customer interactions, and supply chain processes for AI-driven trend analysis and decision-making.</li>
 </ol>
-<p><strong>Example future project: Recycling/Material detection</strong></p>
-<p>The grand challenge in recycling is to identify the materials of garments to a high degree of accuracy, which is particularly difficult for multi-layered garments and garments with certain colors.</p>
+<p><strong>Example: Recycling/Material detection</strong></p>
+<p>The grand challenge in recycling is accurately identifying garment materials, especially for multi-layered garments and certain colors.</p>
 <ol type="1">
-<li>Raw sensor data: For AI to accurately identify materials to streamline recycling processes, we need raw data.​</li>
-<li>Differentiating recycling from reuse: Hard problem – need demand modeling in recycling and retail sectors to decide whether to recycle or reuse.</li>
-<li>Lifecycle Tracking: Develop systems to track garments throughout their lifecycle, optimizing decisions on whether to recycle, repair, or resell.​</li>
-<li>Innovative Recycling Methods: Encourage research into new recycling technologies that can handle a wider range of materials, enabled by better material detection.​</li>
+<li><strong>Focus on Raw Sensor Data:</strong> To streamline recycling, access to raw sensor data is crucial. This includes data from NIR spectrometers, hyperspectral cameras, or other material sensing technologies for accurate material identification.</li>
+<li><strong>Address Recycling vs.&nbsp;Reuse:</strong> Distinguishing between garments for recycling and reuse is a challenge. This requires demand modeling in recycling and retail to assess reuse potential and recycling viability, considering garment condition, material, and market demand.</li>
+<li><strong>Develop Garment Lifecycle Tracking Systems:</strong> Implementing systems to track garments from production to end-of-life is crucial for optimizing resource utilization. This data can inform decisions on recycling, repair, or resale, maximizing lifespan and minimizing waste. Technologies like RFID tags or digital product passports could play a key role.</li>
+<li><strong>Promote Innovative Recycling Technologies:</strong> Encourage research into novel recycling technologies for a wider range of textile materials. Advancements in material detection are a key enabler for these methods, paving the way for a circular fashion economy.</li>
 </ol>
 
 
