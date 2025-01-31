@@ -152,6 +152,40 @@
     margin: 0;
 }
 
+/* Author Presentation */
+.author-container {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #666;
+}
+
+.author-prefix {
+  margin-right: 0.5rem;
+}
+
+.author-name {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.author-email {
+  margin-left: 10px;
+}
+
+.author-email a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.author-email a:hover {
+  color: #333;
+}
+
+.author-email i {
+  margin-right: 5px;
+}
+
 /* General Styles */
 body {
     background-color: #f8f9fa;

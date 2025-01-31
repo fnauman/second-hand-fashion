@@ -1,12 +1,31 @@
 ---
-title: "AI for second-hand fashion"
-author: "Farrukh Nauman, Email: farrukh.nauman@ri.se"
+title: "AI for the Second-Hand Fashion Industry"
+author: Farrukh Nauman
+email: farrukh.nauman@ri.se
+description: "Explore how AI is revolutionizing the second-hand fashion industry through automated solutions for sustainable fashion."
+keywords: [AI, second-hand fashion, dataset, fashion, automation, sustainable fashion, machine learning, computer vision]
 format:
   html:
     grid:
       sidebar-width: 0px
       body-width: 1200px
       margin-width: 250px
+    toc: false
+    include-after-body: title-block.html
+    metadata:
+      og:title: "AI for the Second-Hand Fashion Industry"
+      og:description: "Explore how AI is revolutionizing the second-hand fashion industry through automated solutions for sustainable fashion."
+      og:type: "website"
+      twitter:card: "summary_large_image"
+      twitter:title: "AI for the Second-Hand Fashion Industry"
+      twitter:description: "Explore how AI is revolutionizing the second-hand fashion industry through automated solutions for sustainable fashion."
+    meta-tags:
+      - name: "keywords"
+        content: "AI, second-hand fashion, dataset, fashion, automation, sustainable fashion, machine learning, computer vision"
+      - name: "description"
+        content: "Explore how AI is revolutionizing the second-hand fashion industry through automated solutions for sustainable fashion."
+      - name: "author"
+        content: "Farrukh Nauman"
 ---
 
 ::: {.hero-section}
@@ -79,7 +98,7 @@ html_content += '</div>'
 HTML(html_content)
 ```
 
-## Project Overview {#overview}
+## Project Overview
 
 :::{.grid}
 :::{.g-col-6}
