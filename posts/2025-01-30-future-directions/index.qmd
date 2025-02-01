@@ -27,7 +27,7 @@ format:
         content: "Insights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and local trend analysis."
 ---
 
-# Lessons learned and what's next
+<!-- # Lessons learned and what's next -->
 
 This project has been a success: we managed to create a one-of-a-kind dataset of second-hand fashion items that should have lasting value. Below, I list some challenges we encountered and some future directions for projects in this domain.
 
