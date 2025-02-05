@@ -23,13 +23,26 @@ body {
 
 /* Navigation */
 .navbar {
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 1rem 2rem;
+  margin-bottom: 2rem;
 }
 
 .navbar-brand {
   font-weight: 600;
   letter-spacing: -0.5px;
+  color: var(--light-text) !important;
+}
+
+.navbar .nav-link {
+  color: var(--light-text) !important;
+  opacity: 0.9;
+  transition: opacity 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  opacity: 1;
 }
 
 /* Hero Section */
