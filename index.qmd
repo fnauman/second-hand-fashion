@@ -33,10 +33,10 @@ format:
 ::: {.hero-section}
 # Automating the Second-Hand Fashion Industry
 
-The fashion industry contributes up to 10% of global greenhouse gas emissions. While the second-hand fashion sector offers a sustainable alternative, its operations remain largely manual. Our projects aim to revolutionize this industry through AI-driven automation.
+The fashion industry contributes up to 10% of global greenhouse gas emissions. While the second-hand fashion sector offers a sustainable alternative, its operations remain largely manual. Our projects aim to drive this industry towards automation through a large open dataset and AI models.
 
 ::: {.hero-buttons}
-[View Dataset](https://zenodo.org/records/12518734){.btn-primary}
+[View Dataset](https://zenodo.org/records/13788681){.btn-primary}
 [Read Updates](#recent-posts){.btn-secondary}
 :::
 :::
