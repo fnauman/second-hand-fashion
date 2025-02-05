@@ -11,7 +11,9 @@ format:
       body-width: 1200px
       margin-width: 250px
     toc: false
-    include-after-body: title-block.html
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     metadata:
       og:title: "AI for the Second-Hand Fashion Industry"
       og:description: "Explore how AI is revolutionizing the second-hand fashion industry through automated solutions for sustainable fashion."
@@ -31,10 +33,10 @@ format:
 ::: {.hero-section}
 # Automating the Second-Hand Fashion Industry
 
-The fashion industry contributes up to 10% of global greenhouse gas emissions. While the second-hand fashion sector offers a sustainable alternative, its operations remain largely manual. Our projects aim to revolutionize this industry through AI-driven automation.
+The fashion industry contributes up to 10% of global greenhouse gas emissions. While the second-hand fashion sector offers a sustainable alternative, its operations remain largely manual. Our projects aim to drive this industry towards automation through a large open dataset and AI models.
 
 ::: {.hero-buttons}
-[View Dataset](https://zenodo.org/records/12518734){.btn-primary}
+[View Dataset](https://zenodo.org/records/13788681){.btn-primary}
 [Read Updates](#recent-posts){.btn-secondary}
 :::
 :::
