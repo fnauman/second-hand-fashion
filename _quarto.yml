@@ -4,17 +4,14 @@ project:
 website:
   title: "Second-hand Fashion AI"
   navbar:
-    background: "#2C3E50"
-    foreground: "#ECF0F1"
     left:
       - href: index.qmd
         text: Home
       - href: posts.qmd
         text: Posts
-
 format:
   html:
     theme:
       light: [default, custom.scss]
-    css: styles.css
+      dark: [darkly, custom.scss]
     toc: false

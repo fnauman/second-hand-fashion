@@ -102,14 +102,14 @@ HTML(html_content)
 
 ## Project Overview
 
-:::{.grid}
-:::{.g-col-6}
+::: {.grid}
+::: {.g-col-6}
 <div class="image-card">
 <img src="assets/damaged_tshirt.jpg" alt="damaged t-shirt" class="feature-image"/>
 <div class="image-caption">AI-powered damage detection in clothing</div>
 </div>
 :::
-:::{.g-col-6}
+::: {.g-col-6}
 <div class="image-card">
 <img src="assets/sorting_gemini.jpeg" alt="sorting" class="feature-image"/>
 <div class="image-caption">Automated sorting process visualization</div>
@@ -119,14 +119,10 @@ HTML(html_content)
 
 ## Dataset Statistics {#stats}
 
-:::{.stats-section}
+::: {.stats-section}
 <div class="stats-card">
 <div id="dataset-stats">Loading dataset statistics...</div>
 </div>
-
-<!-- ::: {.callout-note}
-This page will be updated with tutorials with the dataset, tasks like damage detection and model comparison. Stay tuned! (Last updated: `2024-11-24`).
-::: -->
 :::
 
 <script>
@@ -159,3 +155,71 @@ This page will be updated with tutorials with the dataset, tasks like damage det
   fetchDatasetStats();
   setInterval(fetchDatasetStats, 600000);
 </script>
+
+::: {.contact-section}
+## Contact
+
+Feel free to reach out to me:
+
+- **Name:** Farrukh Nauman
+- **Email:** [farrukh.nauman@ri.se](mailto:farrukh.nauman@ri.se)
+- **Website:** [fnauman.github.io](https://fnauman.github.io)
+- **LinkedIn:** [Connect with me](https://linkedin.com/in/YOUR_LINKEDIN)
+- **Twitter:** [Follow me](https://twitter.com/YOUR_TWITTER)
+:::
+
+::: {.footer}
+ 2025 Farrukh Nauman (farrukh.nauman@ri.se). All rights reserved.
+:::
+
+<style>
+body {
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding-bottom: 60px; /* Height of the footer */
+}
+
+.contact-section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.contact-section h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.contact-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-section li {
+  margin-bottom: 0.5rem;
+}
+
+.contact-section a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.contact-section a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eee;
+  background-color: #fff;
+}
+</style>
