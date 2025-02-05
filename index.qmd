@@ -11,7 +11,9 @@ format:
       body-width: 1200px
       margin-width: 250px
     toc: false
-    include-after-body: title-block.html
+    include-in-header:
+      text: |
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     metadata:
       og:title: "AI for the Second-Hand Fashion Industry"
       og:description: "Explore how AI is revolutionizing the second-hand fashion industry through automated solutions for sustainable fashion."
