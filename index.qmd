@@ -164,8 +164,8 @@ Feel free to reach out to me:
 - **Name:** Farrukh Nauman
 - **Email:** [farrukh.nauman@ri.se](mailto:farrukh.nauman@ri.se)
 - **Website:** [fnauman.github.io](https://fnauman.github.io)
-- **LinkedIn:** [Connect with me](https://linkedin.com/in/YOUR_LINKEDIN)
-- **Twitter:** [Follow me](https://twitter.com/YOUR_TWITTER)
+- **LinkedIn:** [Connect with me](https://linkedin.com/in/fnauman)
+- **Twitter:** [Follow me](https://twitter.com/naumanf_)
 :::
 
 ::: {.footer}
