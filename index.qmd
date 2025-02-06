@@ -33,7 +33,7 @@ format:
 ::: {.hero-section}
 # Automating the Second-Hand Fashion Industry
 
-The fashion industry contributes up to 10% of global greenhouse gas emissions. While the second-hand fashion sector offers a sustainable alternative, its operations remain largely manual. Our projects aim to drive this industry towards automation through a large open dataset and AI models.
+The fashion industry contributes up to 10% of global greenhouse gas emissions. While the second-hand fashion sector offers a sustainable alternative, its operations remain largely manual. Our projects aim to drive this industry towards automation through a **large annotated open dataset** and AI models.
 
 ::: {.hero-buttons}
 [View Dataset](https://zenodo.org/records/13788681){.btn-primary}
@@ -102,17 +102,21 @@ HTML(html_content)
 
 ## Project Overview
 
+The dataset for this project was created by a collaboration between [Wargön Innovation AB](https://wargoninnovation.se/en/), [Myrorna AB](https://www.myrorna.se/) and [RISE Research Institutes of Sweden AB](https://www.ri.se/en).  
+
+(**2025-02-06**: The following section images are placeholders at the moment and will direct to model pages soon. In the meantime, check our demo from more than a year ago: [fashion-demo](https://huggingface.co/spaces/fashion-demo-organization/fashion_demo))
+
 ::: {.grid}
 ::: {.g-col-6}
 <div class="image-card">
-<img src="assets/damaged_tshirt.jpg" alt="damaged t-shirt" class="feature-image"/>
-<div class="image-caption">AI-powered damage detection in clothing</div>
+<img src="assets/sorting_gemini.jpeg" alt="sorting" class="feature-image"/>
+<div class="image-caption">Automated sorting process through Attribute Recognition</div>
 </div>
 :::
 ::: {.g-col-6}
 <div class="image-card">
-<img src="assets/sorting_gemini.jpeg" alt="sorting" class="feature-image"/>
-<div class="image-caption">Automated sorting process visualization</div>
+<img src="assets/damaged_tshirt.jpg" alt="damaged t-shirt" class="feature-image"/>
+<div class="image-caption">AI-powered damage detection in clothing</div>
 </div>
 :::
 :::
