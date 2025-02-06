@@ -4,9 +4,8 @@ subtitle: "Lessons Learned and Next Steps in AI-Driven Second-Hand Fashion"
 description: "Insights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and local trend analysis."
 author: "Farrukh Nauman"
 date: "2025-01-30"
-categories: [news, updates, AI, fashion-tech, sustainability]
+categories: [AI, fashion-tech, sustainability]
 tags: [second-hand-fashion, AI-challenges, future-directions, recycling, material-detection, local-trends, sustainability]
-image: "future-directions-thumbnail.jpg"  # If you have a relevant image
 format:
   html:
     metadata:
@@ -18,13 +17,6 @@ format:
       twitter:card: "summary_large_image"
       twitter:title: "Future Directions in AI for Second-Hand Fashion"
       twitter:description: "Comprehensive analysis of challenges and opportunities in applying AI to second-hand fashion, focusing on data quality, organizational challenges, and innovative future directions."
-    meta-tags:
-      - name: "keywords"
-        content: "second-hand fashion, AI challenges, data quality, recycling, material detection, local trends, sustainability, fashion technology, circular economy"
-      - name: "author"
-        content: "Farrukh Nauman"
-      - name: "description"
-        content: "Insights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and local trend analysis."
 ---
 
 <!-- # Lessons learned and what's next -->

@@ -1,10 +1,23 @@
 ---
 title: "Exploring the Second-Hand Fashion Dataset"
-description: "A deep dive into a large-scale clothing dataset for sustainable fashion"
-author: "Nauman"
+subtitle: "A Comprehensive Guide to Working with Large-Scale Clothing Data"
+description: "Deep dive into a 31,000+ image dataset for second-hand clothing classification, including interactive exploration, Python code examples, and applications in sustainable fashion."
+author: "Farrukh Nauman"
 date: "2025-02-06"
-categories: [data, fashion, sustainability]
-# image: "thumbnail.jpg"
+categories: [data, fashion, sustainability, machine-learning, computer-vision]
+tags: [second-hand-fashion, dataset-exploration, huggingface, python-tutorial, sustainable-fashion, clothing-classification, circular-fashion, AI-datasets]
+format:
+  html:
+    metadata:
+      og:title: "Exploring the Second-Hand Fashion Dataset"
+      og:description: "Deep dive into a 31,000+ image dataset for second-hand clothing classification, including interactive exploration, Python code examples, and applications in sustainable fashion."
+      og:type: "article"
+      og:article:published_time: "2025-02-06"
+      og:article:author: "Farrukh Nauman"
+      twitter:card: "summary_large_image"
+      twitter:title: "Exploring the Second-Hand Fashion Dataset"
+      twitter:description: "Deep dive into a 31,000+ image dataset for second-hand clothing classification, including interactive exploration, Python code examples, and applications in sustainable fashion."
+      keywords: ["second-hand fashion", "clothing dataset", "sustainable fashion", "machine learning", "computer vision", "Python tutorial", "Hugging Face datasets", "circular fashion"]
 ---
 
 ## Introduction
