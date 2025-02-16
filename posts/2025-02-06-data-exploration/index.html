@@ -9,7 +9,7 @@
 <meta name="author" content="Farrukh Nauman">
 <meta name="dcterms.date" content="2025-02-06">
 <meta name="keywords" content="second-hand fashion, clothing dataset, sustainable fashion, machine learning, computer vision, Python tutorial, Hugging Face datasets, circular fashion">
-<meta name="description" content="Deep dive into a 31,000+ image dataset for second-hand clothing classification, including interactive exploration, Python code examples, and applications in sustainable fashion.">
+<meta name="description" content="Deep dive into a 30,000+ image dataset for second-hand clothing classification.">
 
 <title>Exploring the Second-Hand Fashion Dataset – Second-hand Fashion AI</title>
 <style>
@@ -166,7 +166,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <div>
   <div class="description">
-    Deep dive into a 31,000+ image dataset for second-hand clothing classification, including interactive exploration, Python code examples, and applications in sustainable fashion.
+    Deep dive into a 30,000+ image dataset for second-hand clothing classification.
   </div>
 </div>
 
@@ -203,7 +203,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In this post, we’ll explore a fascinating dataset focused on second-hand clothing classification. This dataset is particularly interesting as it addresses the growing need for sustainable fashion and efficient sorting of used clothes.</p>
+<p>In this post, we’ll explore our one of a kind dataset that is focused on second-hand clothing classification.</p>
 </section>
 <section id="dataset-overview" class="level2">
 <h2 class="anchored" data-anchor-id="dataset-overview">Dataset Overview</h2>
@@ -220,7 +220,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="interactive-dataset-explorer" class="level2">
 <h2 class="anchored" data-anchor-id="interactive-dataset-explorer">Interactive Dataset Explorer</h2>
-<p>You can explore the dataset directly through the Hugging Face dataset viewer:</p>
+<p>The following is a version of the dataset that only uses the front imageYou can explore the dataset directly through the Hugging Face dataset viewer:</p>
 <iframe src="https://huggingface.co/datasets/fnauman/fashion-second-hand-front-only-rgb/embed/viewer/default/train" frameborder="0" width="100%" height="560px">
 </iframe>
 <p>You can try simple search queries like “Shirt” or use the DuckDB interactive SQL editor to explore the dataset: <code>SELECT * FROM train WHERE type = 'Shirt' AND condition = 4;</code> for example will return all “Shirt” items that have a condition of 4 (i.e.&nbsp;“very good”). You might need to login to your huggingface account to use SQL queries. In my experience, the SQL queries run slowly.</p>

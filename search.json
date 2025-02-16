@@ -4,7 +4,7 @@
     "href": "posts.html",
     "title": "Blog",
     "section": "",
-    "text": "Exploring the Second-Hand Fashion Dataset\n\n\n\ndata\n\n\nfashion\n\n\nsustainability\n\n\nmachine-learning\n\n\ncomputer-vision\n\n\n\nDeep dive into a 31,000+ image dataset for second-hand clothing classification, including interactive exploration, Python code examples, and applications in sustainable…\n\n\n\nFarrukh Nauman\n\n\nFeb 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFuture directions\n\n\n\nAI\n\n\nfashion-tech\n\n\nsustainability\n\n\n\nInsights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and…\n\n\n\nFarrukh Nauman\n\n\nJan 30, 2025\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Exploring the Second-Hand Fashion Dataset\n\n\n\ndata\n\n\nfashion\n\n\nsustainability\n\n\nmachine-learning\n\n\ncomputer-vision\n\n\n\nDeep dive into a 30,000+ image dataset for second-hand clothing classification.\n\n\n\nFarrukh Nauman\n\n\nFeb 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nFuture directions\n\n\n\nAI\n\n\nfashion-tech\n\n\nsustainability\n\n\n\nInsights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and…\n\n\n\nFarrukh Nauman\n\n\nJan 30, 2025\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/2025-01-30-future-directions/index.html",
@@ -39,7 +39,7 @@
     "href": "index.html#recent-posts",
     "title": "AI for the Second-Hand Fashion Industry",
     "section": "Recent Updates",
-    "text": "Recent Updates\n\n\n\n\n\n\n\n\n\n\n    \n        Exploring the Second-Hand Fashion Dataset\n        2025-02-06\n        Deep dive into a 31,000+ image dataset for second-hand clothing classification, including interactive exploration, Python code examples, and applications in sustainable fashion.\n    \n    \n    \n        Future directions\n        2025-01-30\n        Insights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and local trend analysis."
+    "text": "Recent Updates\n\n\n\n\n\n\n\n\n\n\n    \n        Exploring the Second-Hand Fashion Dataset\n        2025-02-06\n        Deep dive into a 30,000+ image dataset for second-hand clothing classification.\n    \n    \n    \n        Future directions\n        2025-01-30\n        Insights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and local trend analysis."
   },
   {
     "objectID": "index.html#project-overview",
@@ -67,14 +67,14 @@
     "href": "posts/2025-02-06-data-exploration/index.html",
     "title": "Exploring the Second-Hand Fashion Dataset",
     "section": "",
-    "text": "In this post, we’ll explore a fascinating dataset focused on second-hand clothing classification. This dataset is particularly interesting as it addresses the growing need for sustainable fashion and efficient sorting of used clothes."
+    "text": "In this post, we’ll explore our one of a kind dataset that is focused on second-hand clothing classification."
   },
   {
     "objectID": "posts/2025-02-06-data-exploration/index.html#introduction",
     "href": "posts/2025-02-06-data-exploration/index.html#introduction",
     "title": "Exploring the Second-Hand Fashion Dataset",
     "section": "",
-    "text": "In this post, we’ll explore a fascinating dataset focused on second-hand clothing classification. This dataset is particularly interesting as it addresses the growing need for sustainable fashion and efficient sorting of used clothes."
+    "text": "In this post, we’ll explore our one of a kind dataset that is focused on second-hand clothing classification."
   },
   {
     "objectID": "posts/2025-02-06-data-exploration/index.html#dataset-overview",
@@ -88,7 +88,7 @@
     "href": "posts/2025-02-06-data-exploration/index.html#interactive-dataset-explorer",
     "title": "Exploring the Second-Hand Fashion Dataset",
     "section": "Interactive Dataset Explorer",
-    "text": "Interactive Dataset Explorer\nYou can explore the dataset directly through the Hugging Face dataset viewer:\n\n\nYou can try simple search queries like “Shirt” or use the DuckDB interactive SQL editor to explore the dataset: SELECT * FROM train WHERE type = 'Shirt' AND condition = 4; for example will return all “Shirt” items that have a condition of 4 (i.e. “very good”). You might need to login to your huggingface account to use SQL queries. In my experience, the SQL queries run slowly."
+    "text": "Interactive Dataset Explorer\nThe following is a version of the dataset that only uses the front imageYou can explore the dataset directly through the Hugging Face dataset viewer:\n\n\nYou can try simple search queries like “Shirt” or use the DuckDB interactive SQL editor to explore the dataset: SELECT * FROM train WHERE type = 'Shirt' AND condition = 4; for example will return all “Shirt” items that have a condition of 4 (i.e. “very good”). You might need to login to your huggingface account to use SQL queries. In my experience, the SQL queries run slowly."
   },
   {
     "objectID": "posts/2025-02-06-data-exploration/index.html#loading-the-dataset",
