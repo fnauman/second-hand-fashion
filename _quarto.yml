@@ -15,3 +15,5 @@ format:
       light: [default, custom.scss]
       dark: [darkly, custom.scss]
     toc: false
+    code-fold: true
+    code-tools: true

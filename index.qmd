@@ -65,11 +65,13 @@ logger = logging.getLogger(__name__)
 
 def get_post_info(post_path):
     try:
+        # logger.info(f"Processing post: {post_path}")
         with open(post_path, 'r', encoding='utf-8') as f:
             content = f.read().split('---')
             if len(content) > 1:
                 try:
                     metadata = yaml.safe_load(content[1])
+                    # logger.info(f"Metadata found: {metadata.get('title')}, {metadata.get('date')}")
                     if not metadata.get('date') or not metadata.get('title'):
                         logger.warning(f"Missing required metadata in {post_path}")
                         return None
@@ -91,19 +93,26 @@ def get_post_info(post_path):
 posts = []
 posts_dir = Path('posts')
 try:
-    for post_file in posts_dir.glob('*/index.qmd'):
+    # logger.info(f"Looking for posts in: {posts_dir.absolute()}")
+    found_files = list(posts_dir.glob('*/index.qmd'))
+    # logger.info(f"Found {len(found_files)} potential post files: {found_files}")
+    for post_file in found_files:
         post_info = get_post_info(post_file)
         if post_info:
             posts.append(post_info)
-            # logger.info(f"Found post: {post_info['title']} ({post_info['date']})")
+            # logger.info(f"Added post: {post_info['title']} ({post_info['date']})")
+        else:
+            logger.warning(f"Could not extract info from: {post_file}")
 except Exception as e:
     logger.error(f"Error scanning posts directory: {e}")
 
 # Sort posts by date, most recent first
 posts.sort(key=lambda x: x['date'], reverse=True)
+# logger.info(f"Sorted posts: {[p['title'] for p in posts]}")
 
 # Take only the 3 most recent posts
 recent_posts = posts[:3]
+# logger.info(f"Selected recent posts: {[p['title'] for p in recent_posts]}")
 
 html_content = '<div class="recent-posts-grid">'
 for post in recent_posts:

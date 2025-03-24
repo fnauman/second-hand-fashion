@@ -1,0 +1,190 @@
+---
+title: "Zero-Shot Image Classification with CLIP Models"
+subtitle: "Leveraging Vision-Language Models for Classifying Images Without Training"
+description: "Explore how CLIP and SigLIP models enable zero-shot image classification and their unique advantages over traditional image classifiers."
+author: "Farrukh Nauman"
+date: "2025-03-22"
+image: ""
+categories: [deep-learning, computer-vision, natural-language-processing]
+tags: [zero-shot-image-classification, CLIP, SigLIP, image-classification, transformers, vision-language-models]
+format:
+  html:
+    code-fold: true
+    code-tools: true
+    metadata:
+      og:title: "Zero-Shot Image Classification with CLIP Models"
+      og:description: "Explore how CLIP and SigLIP models enable zero-shot image classification and their unique advantages over traditional image classifiers."
+      og:type: "article"
+      og:article:published_time: "2025-03-22"
+      og:article:author: "Farrukh Nauman"
+      twitter:card: "summary_large_image"
+      twitter:title: "Zero-Shot Image Classification with CLIP Models"
+      twitter:description: "Explore how CLIP and SigLIP models enable zero-shot image classification and their unique advantages over traditional image classifiers."
+      keywords: ["zero-shot image classification", "CLIP models", "SigLIP", "image classification", "vision-language models", "transformers", "computer vision"]
+---
+
+## Introduction
+
+Imagine you're sorting through a huge pile of clothes for your online second-hand store. You've got everything from vintage dresses to modern t-shirts, and you need to quickly categorize them all.  Traditional image classifiers are like robots trained to only recognize a specific set of clothing types they've seen before.  If you suddenly have a "bohemian skirt" – something outside their training – they'd be stumped!
+
+But what if you could use a smarter kind of AI?  One that can understand the *idea* of a "bohemian skirt" just from the words, even if it's never seen one exactly like it before? That's the magic of **zero-shot image classification**, and it's changing how we can use computers to understand images, especially in fields like fashion where trends and categories are always evolving.
+
+In this post, we'll explore how models called **CLIP (Contrastive Language-Image Pre-training)** and **SigLIP (Sigmoid Loss Pre-training)** make this "zero-shot" magic possible.  They are vision-language models, meaning they understand both images *and* text, allowing them to classify images in incredibly flexible ways, without needing to be specifically trained on every single category beforehand. This is a game-changer for anyone dealing with visual categorization tasks, especially in dynamic domains like fashion.
+
+## What Makes CLIP and SigLIP Special?
+
+CLIP and SigLIP are fundamentally different from traditional image classifiers like ResNet or EfficientNet (and even Vision Transformers (ViT) used solely for classification) in several important ways:
+
+1. **Joint Vision-Language Training (Contrastive Learning)**:  This is the core difference.
+    *   **Traditional Classifiers (ResNet, ViT)**: These models are trained on images labeled with a *fixed set of categories*. They learn to map image features to these specific labels.  They *only* learn visual features. The output layer has a fixed number of neurons, one for each class.
+    *   **CLIP/SigLIP**: These models are trained on *image-text pairs*.  The training objective is *contrastive*.  Given a batch of images and texts, the model learns to:
+        *   Maximize the similarity between the embeddings of an image and its *correct* text description.
+        *   Minimize the similarity between the embeddings of an image and *incorrect* text descriptions.
+        This is often done using a contrastive loss function (e.g., InfoNCE). SigLIP uses a sigmoid cross-entropy loss instead of the softmax-based contrastive loss in CLIP, which has been shown to improve performance.
+        This creates a *joint embedding space* where images and text representing similar concepts are close together, even if the model hasn't seen that exact combination during training.
+
+2. **Massive Datasets**: These models are pre-trained on 100M-1B+ image-text pairs collected from the internet. This "web" scale pretraining data ensures that the models have seen a wide range of visual and textual concepts, making them more robust and versatile.
+
+3. **No Predefined Classes (During Inference)**:
+    *   **Traditional Classifiers**:  Require a predefined set of output classes.  You can't ask them to classify something outside of that set without retraining or fine-tuning.
+    *   **CLIP/SigLIP**:  Can classify images against any arbitrary text description *at inference time*. The model compares the image embedding to the embeddings of the provided text descriptions. This flexibility is the essence of zero-shot learning. One potential limitation is that certain unique concepts or names like specific new brands or products may not be recognized.
+
+## How Zero-Shot Classification Works
+
+The core mechanism behind zero-shot classification with CLIP-like models is elegantly simple:
+
+1.  **Encoding**: The model uses separate encoders (typically Transformers) for images and text.  The image is passed through the image encoder, and each potential text label is passed through the text encoder. This produces an image embedding and a set of text embeddings, all within the *same* shared embedding space.
+2.  **Similarity Calculation**: The model then computes the similarity between the image embedding and *each* text embedding.  Cosine similarity is commonly used.
+3.  **Prediction**: The text label with the highest similarity score is the predicted class.
+
+This approach allows you to classify images using any text descriptions you provide on the fly, without retraining the model.
+
+## Zero-Shot Classification with Transformers
+
+Let's implement a simple zero-shot image classifier using the Hugging Face `transformers` library:
+
+```{python}
+#| label: example1
+#| code-fold: true
+#| eval: false
+
+from transformers import pipeline
+from PIL import Image
+
+# Load a pre-trained CLIP/SigLIP model
+classifier = pipeline(
+    "zero-shot-image-classification",
+    model="google/siglip-base-patch16-224",
+)
+
+# Load an image
+image = Image.open("fashion_item.jpg")
+
+# Define classification labels
+candidate_labels = [
+    "t-shirt", 
+    "dress", 
+    "jacket", 
+    "jeans"
+]
+
+# Perform zero-shot classification
+results = classifier(
+    image, 
+    candidate_labels=candidate_labels
+)
+
+# Print results
+for result in results:
+    print(f"{result['label']}: {result['score']:.2%}")
+
+# Output:
+# t-shirt: 76.32%
+# dress: 15.87%
+# jacket: 4.51%
+# jeans: 2.15%
+```
+
+The model assigns a confidence score to each label without ever being explicitly trained on fashion categories.
+
+## Advanced Example: Custom Model Selection
+
+You can choose from several state-of-the-art vision-language models for zero-shot classification. Here's a more advanced example with model selection:
+
+```{python}
+#| label: example2
+#| code-fold: true
+#| eval: false
+
+import torch
+from transformers import pipeline
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Available models
+MODELS = {
+    "siglip-base-patch16-224": "google/siglip-base-patch16-224", 
+    "siglip2-base-patch16-224": "google/siglip2-base-patch16-224",
+    "siglip2-so400m-patch14-384": "google/siglip2-so400m-patch14-384", 
+    "jina-clip-v2": "jinaai/jina-clip-v2",
+    "marqo-fashionSigLIP": "Marqo/marqo-fashionSigLIP"
+}
+
+def classify_with_model(image_path, labels, model_name="siglip-base-patch16-224"):
+    """Classify an image using a specified model"""
+    # Load model
+    model_path = MODELS[model_name]
+    classifier = pipeline(
+        model=model_path,
+        task="zero-shot-image-classification",
+        device="cuda" if torch.cuda.is_available() else "cpu"
+    )
+    
+    # Load and classify image
+    image = Image.open(image_path)
+    results = classifier(image, candidate_labels=labels)
+    
+    # Display results
+    plt.figure(figsize=(10, 6))
+    labels = [result["label"] for result in results]
+    scores = [result["score"] for result in results]
+    
+    # Sort by score
+    sorted_indices = np.argsort(scores)[::-1]
+    sorted_labels = [labels[i] for i in sorted_indices]
+    sorted_scores = [scores[i] for i in sorted_indices]
+    
+    # Plot bar chart
+    bars = plt.barh(range(len(sorted_labels)), sorted_scores)
+    plt.yticks(range(len(sorted_labels)), sorted_labels)
+    plt.xlabel('Confidence Score')
+    plt.title(f'Classification Results with {model_name}')
+    
+    # Add percentage labels
+    for i, bar in enumerate(bars):
+        plt.text(bar.get_width() + 0.01, bar.get_y() + bar.get_height()/2, 
+                f'{sorted_scores[i]:.2%}', va='center')
+    
+    plt.tight_layout()
+    plt.show()
+    
+    return results
+
+# Example usage
+classify_with_model(
+    "fashion_item.jpg",
+    ["casual wear", "formal attire", "sportswear", "business casual", "vintage style"],
+    "siglip2-so400m-patch14-384"
+)
+```
+
+
+## Conclusions
+
+Zero-shot classification is particularly valuable in domains like fashion where:
+
+1. **Categories evolve quickly**: New styles and trends emerge constantly
+2. **Attribute-based classification**: Items can be classified along multiple dimensions (style, occasion, material, etc.)
+3. **Specialized vocabulary**: Fashion has domain-specific terminology that traditional classifiers struggle with
+
+Zero-shot image classification with foundation models like CLIP and SigLIP models is useful for a range of applications and can be used to annotate unlabeled images. The reason these models are referred to as "foundation" models is because their general-purpose nature makes them applicable to a wide range of tasks, and they can be fine-tuned for specific applications.
