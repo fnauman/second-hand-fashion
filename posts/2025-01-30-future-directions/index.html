@@ -240,7 +240,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </section>
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{nauman2025,
+  author = {Nauman, Farrukh},
+  title = {Future Directions},
+  date = {2025-01-30},
+  url = {https://fnauman.github.io/second-hand-fashion/posts/2025-01-30-future-directions/},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-nauman2025" class="csl-entry quarto-appendix-citeas" role="listitem">
+Nauman, Farrukh. 2025. <span>“Future Directions.”</span> January 30,
+2025. <a href="https://fnauman.github.io/second-hand-fashion/posts/2025-01-30-future-directions/">https://fnauman.github.io/second-hand-fashion/posts/2025-01-30-future-directions/</a>.
+</div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -861,62 +871,63 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "2025-01-30"</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [AI, fashion, sustainability]</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span><span class="co"> [second-hand-fashion, AI-challenges, future-directions, recycling, material-detection, local-trends, sustainability]</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">    metadata:</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">      og:title: "Future Directions in AI for Second-Hand Fashion"</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">      og:description: "Comprehensive analysis of challenges and opportunities in applying AI to second-hand fashion, focusing on data quality, organizational challenges, and innovative future directions."</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">      og:type: "article"</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">      og:article:published_time: "2025-01-30"</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">      og:article:author: "Farrukh Nauman"</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">      twitter:card: "summary_large_image"</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">      twitter:title: "Future Directions in AI for Second-Hand Fashion"</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">      twitter:description: "Comprehensive analysis of challenges and opportunities in applying AI to second-hand fashion, focusing on data quality, organizational challenges, and innovative future directions."</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- # Lessons learned and what's next --&gt;</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>This project has been a success: we managed to create a one-of-a-kind dataset of second-hand fashion items that should have lasting value. Below, I list some challenges we encountered and some future directions for projects in this domain.</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="fu">## Challenges</span></span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>**Data quality issues**:</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>The dataset currently only includes image-level annotations, lacking bounding boxes or segmentation masks. This limits its applicability for tasks like detailed damage detection, which requires precisely locating damaged areas within the garment image.</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>We encountered issues with annotation quality and consistency. A significant portion of annotations were inaccurate leading to substantial manual effort in cleaning and rejecting unusable data. This increased the project's workload and timeline.</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Data collection was sometimes hampered by suboptimal image quality. Lower resolution images and inconsistent lighting conditions made annotation more challenging and potentially impacted the accuracy of AI models. Future data collection should prioritize high-resolution images under controlled lighting.</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>The lack of standardized annotation guidelines in the second-hand fashion industry posed a challenge. The absence of a common vocabulary for describing garment attributes makes it difficult to leverage pre-trained AI models and compare datasets. Developing industry-wide annotation standards would benefit research and development. Digital Product Passports (DPPs) could serve as a starting point. </span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>**Organizational challenges**:</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Ensuring a baseline level of technical capacity across partner organizations is crucial. We experienced technical issues with equipment (e.g., camera setups, laptops) where some partner organizations lacked the expertise to resolve them independently. For future projects, upfront technical training and support for all partners is recommended.</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The fragmented and underfunded nature of the second-hand fashion industry presents financing challenges. This makes it difficult for organizations and initiatives to secure resources for developing and scaling innovative AI projects. Dedicated funding and investment in this sector are essential.</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>A gap in understanding AI and automation among some managers and representatives hindered project implementation. This lack of familiarity sometimes led to unrealistic expectations or difficulties integrating AI workflows. Investing in education and communication to bridge this knowledge gap is vital for successful AI adoption.</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">## Future directions</span></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>A few general recommendations:</span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Prioritize specialized AI applications:** Focus on identifying and developing AI tools for specific, high-impact niche areas within the second-hand fashion sector, such as damage detection, automated quality assessment, or personalized recommendation systems.</span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Embrace Adaptability:** The AI landscape is constantly changing. Given the typical 6-12 month cycles for securing funding and launching research projects (especially for large EU and national grants), it’s crucial to build adaptability into project design and be prepared to adjust plans as needed.</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Leverage Existing Technology and Expertise:** Avoid reinventing the wheel. Prioritize the transfer and adaptation of existing AI technologies and methodologies.  Actively seek technical expertise through hiring specialists, collaboration, or open-source resources.</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Invest in High-Quality Data:** Building upon our challenges, future projects must prioritize high-resolution images under controlled conditions and robust, consistent annotations. This upfront investment in data quality will improve model performance and reduce data cleaning efforts.</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>**Example: Recycling/Material detection**</span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>The grand challenge in recycling is accurately identifying garment materials, especially for multi-layered garments and certain colors.</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Focus on Raw Sensor Data:** To streamline recycling, access to raw sensor data is crucial. This includes data from NIR spectrometers, hyperspectral cameras, or other material sensing technologies for accurate material identification.</span>
-<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Address Recycling vs. Reuse:** Distinguishing between garments for recycling and reuse is a challenge. This requires demand modeling in recycling and retail to assess reuse potential and recycling viability, considering garment condition, material, and market demand.</span>
-<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Develop Garment Lifecycle Tracking Systems:**  Implementing systems to track garments from production to end-of-life is crucial for optimizing resource utilization. This data can inform decisions on recycling, repair, or resale, maximizing lifespan and minimizing waste. Technologies like RFID tags or digital product passports could play a key role.</span>
-<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Promote Innovative Recycling Technologies:** Encourage research into novel recycling technologies for a wider range of textile materials. Advancements in material detection are a key enabler for these methods, paving the way for a circular fashion economy.</span>
-<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>**Example: Localized Trends**</span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Address Localized Fashion Trends:** Highlight regional variations in fashion preferences. Effectively matching supply with local demand is a major challenge, leading to mismatches and missed opportunities.</span>
-<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Source Data from First-Hand Retailers:** To capture current trends, consider data from first-hand retailers. This provides more timely and representative information on consumer preferences than second-hand market data, which may reflect older trends.</span>
-<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Develop a Comprehensive Dataset:** This dataset should include features capturing nuances of local trends, such as demographics, local events, weather patterns, and social media trends related to fashion in specific regions.</span>
-<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Embrace End-to-End Digitalization:**  To enable AI models to adapt to changing trends, a fully digital ecosystem is essential. This includes digitalizing inventory management, sales data, customer interactions, and supply chain processes for AI-driven trend analysis and decision-making.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">citation:</span><span class="co"> true</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">  html:</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">    metadata:</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">      og:title: "Future Directions in AI for Second-Hand Fashion"</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">      og:description: "Comprehensive analysis of challenges and opportunities in applying AI to second-hand fashion, focusing on data quality, organizational challenges, and innovative future directions."</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">      og:type: "article"</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="co">      og:article:published_time: "2025-01-30"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="co">      og:article:author: "Farrukh Nauman"</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="co">      twitter:card: "summary_large_image"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">      twitter:title: "Future Directions in AI for Second-Hand Fashion"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="co">      twitter:description: "Comprehensive analysis of challenges and opportunities in applying AI to second-hand fashion, focusing on data quality, organizational challenges, and innovative future directions."</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- # Lessons learned and what's next --&gt;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>This project has been a success: we managed to create a one-of-a-kind dataset of second-hand fashion items that should have lasting value. Below, I list some challenges we encountered and some future directions for projects in this domain.</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="fu">## Challenges</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>**Data quality issues**:</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>The dataset currently only includes image-level annotations, lacking bounding boxes or segmentation masks. This limits its applicability for tasks like detailed damage detection, which requires precisely locating damaged areas within the garment image.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>We encountered issues with annotation quality and consistency. A significant portion of annotations were inaccurate leading to substantial manual effort in cleaning and rejecting unusable data. This increased the project's workload and timeline.</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Data collection was sometimes hampered by suboptimal image quality. Lower resolution images and inconsistent lighting conditions made annotation more challenging and potentially impacted the accuracy of AI models. Future data collection should prioritize high-resolution images under controlled lighting.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>The lack of standardized annotation guidelines in the second-hand fashion industry posed a challenge. The absence of a common vocabulary for describing garment attributes makes it difficult to leverage pre-trained AI models and compare datasets. Developing industry-wide annotation standards would benefit research and development. Digital Product Passports (DPPs) could serve as a starting point. </span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>**Organizational challenges**:</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Ensuring a baseline level of technical capacity across partner organizations is crucial. We experienced technical issues with equipment (e.g., camera setups, laptops) where some partner organizations lacked the expertise to resolve them independently. For future projects, upfront technical training and support for all partners is recommended.</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The fragmented and underfunded nature of the second-hand fashion industry presents financing challenges. This makes it difficult for organizations and initiatives to secure resources for developing and scaling innovative AI projects. Dedicated funding and investment in this sector are essential.</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>A gap in understanding AI and automation among some managers and representatives hindered project implementation. This lack of familiarity sometimes led to unrealistic expectations or difficulties integrating AI workflows. Investing in education and communication to bridge this knowledge gap is vital for successful AI adoption.</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">## Future directions</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>A few general recommendations:</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Prioritize specialized AI applications:** Focus on identifying and developing AI tools for specific, high-impact niche areas within the second-hand fashion sector, such as damage detection, automated quality assessment, or personalized recommendation systems.</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Embrace Adaptability:** The AI landscape is constantly changing. Given the typical 6-12 month cycles for securing funding and launching research projects (especially for large EU and national grants), it’s crucial to build adaptability into project design and be prepared to adjust plans as needed.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Leverage Existing Technology and Expertise:** Avoid reinventing the wheel. Prioritize the transfer and adaptation of existing AI technologies and methodologies.  Actively seek technical expertise through hiring specialists, collaboration, or open-source resources.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Invest in High-Quality Data:** Building upon our challenges, future projects must prioritize high-resolution images under controlled conditions and robust, consistent annotations. This upfront investment in data quality will improve model performance and reduce data cleaning efforts.</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>**Example: Recycling/Material detection**</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>The grand challenge in recycling is accurately identifying garment materials, especially for multi-layered garments and certain colors.</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Focus on Raw Sensor Data:** To streamline recycling, access to raw sensor data is crucial. This includes data from NIR spectrometers, hyperspectral cameras, or other material sensing technologies for accurate material identification.</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Address Recycling vs. Reuse:** Distinguishing between garments for recycling and reuse is a challenge. This requires demand modeling in recycling and retail to assess reuse potential and recycling viability, considering garment condition, material, and market demand.</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Develop Garment Lifecycle Tracking Systems:**  Implementing systems to track garments from production to end-of-life is crucial for optimizing resource utilization. This data can inform decisions on recycling, repair, or resale, maximizing lifespan and minimizing waste. Technologies like RFID tags or digital product passports could play a key role.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Promote Innovative Recycling Technologies:** Encourage research into novel recycling technologies for a wider range of textile materials. Advancements in material detection are a key enabler for these methods, paving the way for a circular fashion economy.</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>**Example: Localized Trends**</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>**Address Localized Fashion Trends:** Highlight regional variations in fashion preferences. Effectively matching supply with local demand is a major challenge, leading to mismatches and missed opportunities.</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>**Source Data from First-Hand Retailers:** To capture current trends, consider data from first-hand retailers. This provides more timely and representative information on consumer preferences than second-hand market data, which may reflect older trends.</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Develop a Comprehensive Dataset:** This dataset should include features capturing nuances of local trends, such as demographics, local events, weather patterns, and social media trends related to fashion in specific regions.</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">4. </span>**Embrace End-to-End Digitalization:**  To enable AI models to adapt to changing trends, a fully digital ecosystem is essential. This includes digitalizing inventory management, sales data, customer interactions, and supply chain processes for AI-driven trend analysis and decision-making.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
