@@ -7,6 +7,7 @@ date: "2025-03-22"
 image: ""
 categories: [deep-learning, computer-vision, natural-language-processing]
 tags: [zero-shot-image-classification, CLIP, SigLIP, image-classification, transformers, vision-language-models]
+citation: true
 format:
   html:
     code-fold: true

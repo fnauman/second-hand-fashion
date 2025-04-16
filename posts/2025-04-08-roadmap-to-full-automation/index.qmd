@@ -6,6 +6,7 @@ author: "Farrukh Nauman"
 date: "2025-04-08"
 categories: [AI, automation, fashion, sustainability]
 tags: [second-hand-fashion, automation, digitalization, domain-expertise, sorting-industry, AI-readiness]
+citation: true
 format:
   html:
     metadata:
