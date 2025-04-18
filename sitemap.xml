@@ -1,27 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://fnauman.github.io/second-hand-fashion/posts/2025-02-06-data-exploration/index.html</loc>
-    <lastmod>2025-04-16T11:03:04.386Z</lastmod>
+    <loc>https://fnauman.github.io/second-hand-fashion/posts.html</loc>
+    <lastmod>2025-01-30T16:39:15.522Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fnauman.github.io/second-hand-fashion/ignore_folder/gradio_migration_guide_4.html</loc>
+    <lastmod>2025-01-17T03:25:07.533Z</lastmod>
   </url>
   <url>
     <loc>https://fnauman.github.io/second-hand-fashion/posts/2025-04-08-roadmap-to-full-automation/index.html</loc>
-    <lastmod>2025-04-16T11:02:35.340Z</lastmod>
-  </url>
-  <url>
-    <loc>https://fnauman.github.io/second-hand-fashion/index.html</loc>
-    <lastmod>2025-04-08T09:12:23.530Z</lastmod>
-  </url>
-  <url>
-    <loc>https://fnauman.github.io/second-hand-fashion/posts.html</loc>
-    <lastmod>2025-01-31T07:33:43.866Z</lastmod>
-  </url>
-  <url>
-    <loc>https://fnauman.github.io/second-hand-fashion/posts/2025-03-22-zero-shot-image-classification/index.html</loc>
-    <lastmod>2025-04-16T11:02:53.177Z</lastmod>
+    <lastmod>2025-04-18T12:59:37.155Z</lastmod>
   </url>
   <url>
     <loc>https://fnauman.github.io/second-hand-fashion/posts/2025-01-30-future-directions/index.html</loc>
-    <lastmod>2025-04-16T11:03:12.814Z</lastmod>
+    <lastmod>2025-04-18T13:00:06.363Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fnauman.github.io/second-hand-fashion/index.html</loc>
+    <lastmod>2025-03-24T14:18:15.757Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fnauman.github.io/second-hand-fashion/posts/2025-02-06-data-exploration/index.html</loc>
+    <lastmod>2025-04-18T12:59:51.711Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fnauman.github.io/second-hand-fashion/posts/2025-03-22-zero-shot-image-classification/index.html</loc>
+    <lastmod>2025-04-18T12:59:45.559Z</lastmod>
+  </url>
+  <url>
+    <loc>https://fnauman.github.io/second-hand-fashion/ignore_folder/gradio_common_errors.html</loc>
+    <lastmod>2025-01-17T03:41:33.370Z</lastmod>
   </url>
 </urlset>
