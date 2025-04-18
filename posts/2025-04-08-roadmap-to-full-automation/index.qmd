@@ -2,11 +2,9 @@
 title: "Roadmap to full automation in sorting in the second-hand industry"
 subtitle: "A Multi-Stage Approach to Automation and AI Implementation"
 description: "An exploration of the path to automation in the second-hand fashion industry, examining the steps needed for successful AI integration from initial assessment to full implementation."
-author: "Farrukh Nauman"
 date: "2025-04-08"
 categories: [AI, automation, fashion, sustainability]
 tags: [second-hand-fashion, automation, digitalization, domain-expertise, sorting-industry, AI-readiness]
-citation: true
 format:
   html:
     metadata:

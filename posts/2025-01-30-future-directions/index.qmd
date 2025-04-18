@@ -2,11 +2,9 @@
 title: "Future directions"
 subtitle: "Lessons Learned and Next Steps in AI-Driven Second-Hand Fashion"
 description: "Insights into data quality challenges, organizational hurdles, and future opportunities in AI for second-hand fashion, including specialized applications in recycling and local trend analysis."
-author: "Farrukh Nauman"
 date: "2025-01-30"
 categories: [AI, fashion, sustainability]
 tags: [second-hand-fashion, AI-challenges, future-directions, recycling, material-detection, local-trends, sustainability]
-citation: true
 format:
   html:
     metadata:
