@@ -1,6 +1,5 @@
 ---
 title: "Exploring the Second-Hand Fashion Dataset"
-subtitle: "A Comprehensive Guide to Working with Large-Scale Clothing Data"
 description: "Deep dive into a 30,000+ image dataset for second-hand clothing classification."
 date: "2025-02-06"
 categories: [data, fashion, sustainability, machine-learning, computer-vision]

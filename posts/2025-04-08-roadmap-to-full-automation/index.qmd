@@ -1,6 +1,5 @@
 ---
 title: "Roadmap to full automation in sorting in the second-hand industry"
-subtitle: "A Multi-Stage Approach to Automation and AI Implementation"
 description: "An exploration of the path to automation in the second-hand fashion industry, examining the steps needed for successful AI integration from initial assessment to full implementation."
 date: "2025-04-08"
 categories: [AI, automation, fashion, sustainability]
@@ -18,7 +17,7 @@ format:
       twitter:description: "A comprehensive guide to achieving automation in the second-hand fashion industry, focusing on digitalization, expertise capture, and AI implementation."
 ---
 
-# The Path to Automation in Second-Hand Fashion
+## Introduction
 
 Achieving full automation in any industry is rarely an overnight transformation. Instead, it requires a methodical, multi-stage process that often spans several years of dedicated effort. This is particularly true for the second-hand fashion industry, where unique challenges must be addressed before meaningful automation can take root.
 

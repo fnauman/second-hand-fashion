@@ -1,6 +1,5 @@
 ---
 title: "Zero-Shot Image Classification with CLIP Models"
-subtitle: "Leveraging Vision-Language Models for Classifying Images Without Training"
 description: "Explore how CLIP and SigLIP models enable zero-shot image classification and their unique advantages over traditional image classifiers."
 date: "2025-03-22"
 image: ""

@@ -6,14 +6,14 @@ description: "Explore how AI is revolutionizing the second-hand fashion industry
 keywords: [AI, second-hand fashion, dataset, fashion, automation, sustainable fashion, machine learning, computer vision]
 format:
   html:
+    theme: 
+      light: [default, custom.scss, custom-homepage.scss]
+      dark: [darkly, custom.scss, custom-homepage.scss]
     grid:
       sidebar-width: 0px
       body-width: 1200px
       margin-width: 250px
     toc: false
-    include-in-header:
-      text: |
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     metadata:
       og:title: "AI for the Second-Hand Fashion Industry"
       og:description: "Explore how AI is revolutionizing the second-hand fashion industry through automated solutions for sustainable fashion."
