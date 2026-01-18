@@ -191,7 +191,7 @@ The dataset for this project was created by a collaboration between [Wargön Inn
 ::: {.contact-section}
 ## Contact
 
-This page was created by Farrukh Nauman (farrukh.nauman@inertialrange.com) and is not affiliated with any of the organizations mentioned above. I used to work at RISE until August 2025.
+This page was created by Farrukh Nauman and is not affiliated with any of the organizations mentioned above. I used to work at RISE until August 2025.
 
 Feel free to reach out to me:
 
@@ -203,7 +203,7 @@ Feel free to reach out to me:
 :::
 
 ::: {.footer}
-2026 Farrukh Nauman (farrukh.nauman@inertialrange.com). All rights reserved.
+2026 Farrukh Nauman. All rights reserved.
 :::
 
 <style>
