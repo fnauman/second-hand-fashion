@@ -1,7 +1,7 @@
 ---
 title: "AI for the Second-Hand Fashion Industry"
 author: Farrukh Nauman
-email: farrukh.nauman@ri.se
+email: farrukh.nauman@inertialrange.com
 description: "Explore how AI is revolutionizing the second-hand fashion industry through automated solutions for sustainable fashion."
 keywords: [AI, second-hand fashion, dataset, fashion, automation, sustainable fashion, machine learning, computer vision]
 format:
@@ -191,17 +191,19 @@ The dataset for this project was created by a collaboration between [Wargön Inn
 ::: {.contact-section}
 ## Contact
 
+This page was created by Farrukh Nauman (farrukh.nauman@inertialrange.com) and is not affiliated with any of the organizations mentioned above. I used to work at RISE until August 2025.
+
 Feel free to reach out to me:
 
 - **Name:** Farrukh Nauman
-- **Email:** [farrukh.nauman@ri.se](mailto:farrukh.nauman@ri.se)
+- **Email:** [farrukh.nauman@inertialrange.com](mailto:farrukh.nauman@inertialrange.com)
 - **Website:** [fnauman.github.io](https://fnauman.github.io)
 - **LinkedIn:** [Connect with me](https://linkedin.com/in/fnauman)
-- **Twitter:** [Follow me](https://twitter.com/naumanf_)
+- **Twitter:** [Follow me](https://x.com/fnauman)
 :::
 
 ::: {.footer}
- 2025 Farrukh Nauman (farrukh.nauman@ri.se). All rights reserved.
+2026 Farrukh Nauman (farrukh.nauman@inertialrange.com). All rights reserved.
 :::
 
 <style>
